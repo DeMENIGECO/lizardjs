@@ -222,7 +222,7 @@ Controlla questa checklist:
 
 ## 🤝 Codice di condotta
 
-Tutti i contributori devono rispettare il [Code of Conduct](CODE_OF_CONDUCT.md).
+Tutti i contributori devono rispettare il [Code of Conduct](.github/CODE_OF_CONDUCT.md).
 
 LizardJS vuole essere un progetto aperto, collaborativo e rispettoso.
 
