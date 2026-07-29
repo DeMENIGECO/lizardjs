@@ -1,0 +1,70 @@
+name: Feature Request
+description: Proponi una nuova funzionalità per LizardJS.
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver proposto una nuova funzionalità per LizardJS! 🦎
+
+        Descrivi l'idea nel modo più chiaro possibile.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: Qual è la funzionalità?
+      description: Descrivi cosa vorresti aggiungere a LizardJS.
+      placeholder: |
+        Vorrei che LizardJS permettesse di...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Quale problema risolverebbe?
+      description: Spiega perché questa funzionalità sarebbe utile.
+      placeholder: |
+        Attualmente per fare... bisogna...
+        Questa funzionalità permetterebbe di...
+    validations:
+      required: true
+
+  - type: textarea
+    id: usage
+    attributes:
+      label: Come dovrebbe essere utilizzata?
+      description: Mostra, se possibile, un esempio di utilizzo.
+      render: javascript
+      placeholder: |
+        import { nuovaFunzione } from "./lizardjs/...";
+
+        nuovaFunzione(...);
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative considerate
+      description: Hai già provato a ottenere questo risultato in un altro modo?
+      placeholder: |
+        Ho provato a...
+        Tuttavia...
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi qualsiasi altra informazione, esempio o screenshot.
+      placeholder: Qualsiasi informazione utile...
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Controlli
+      options:
+        - label: Ho controllato che questa funzionalità non sia già stata proposta.
+          required: true
+        - label: Ho letto la documentazione di LizardJS.
+          required: true
