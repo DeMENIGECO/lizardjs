@@ -1,0 +1,110 @@
+```yaml
+name: Bug Report
+description: Segnala un problema o un comportamento inatteso in LizardJS.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un bug di LizardJS! 🦎
+
+        Prima di aprire la issue, assicurati che il problema non sia già stato segnalato.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del bug
+      description: Spiega cosa non funziona.
+      placeholder: |
+        Quando provo a...
+        LizardJS...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Come riprodurre il problema
+      description: Indica i passaggi necessari per riprodurre il bug.
+      placeholder: |
+        1. Importo...
+        2. Avvio...
+        3. Chiamo...
+        4. Si verifica...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento atteso
+      description: Cosa ti aspettavi che succedesse?
+      placeholder: Mi aspettavo che...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Comportamento attuale
+      description: Cosa succede invece?
+      placeholder: Invece succede che...
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Codice per riprodurre il problema
+      description: Se possibile, inserisci un esempio minimo riproducibile.
+      render: javascript
+      placeholder: |
+        import { ... } from "./lizardjs/...";
+
+        // Codice che riproduce il problema
+
+  - type: textarea
+    id: error
+    attributes:
+      label: Errore
+      description: Incolla qui l'errore o lo stack trace, se presente.
+      render: text
+
+  - type: input
+    id: version
+    attributes:
+      label: Versione di LizardJS
+      description: Quale versione di LizardJS stai utilizzando?
+      placeholder: "es. 0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: node
+    attributes:
+      label: Versione di Node.js
+      placeholder: "es. Node.js 24.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Altro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi eventuali screenshot, log o altre informazioni utili.
+      placeholder: Qualsiasi altra informazione utile...
+```
