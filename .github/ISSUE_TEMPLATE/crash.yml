@@ -1,0 +1,93 @@
+name: Crash Report
+description: Segnala un crash di LizardJS.
+title: "[Crash]: "
+labels:
+  - crash
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie per aver segnalato un crash di LizardJS! 🦎
+
+        Prima di aprire la issue, controlla che il crash non sia già stato segnalato.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Descrizione del crash
+      description: Spiega cosa stavi facendo quando LizardJS è andato in crash.
+      placeholder: |
+        Stavo avviando...
+        Il crash si verifica quando...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Come riprodurre il crash
+      description: Indica i passaggi necessari per riprodurre il crash.
+      placeholder: |
+        1. Avvio...
+        2. Importo...
+        3. Eseguo...
+        4. LizardJS va in crash.
+    validations:
+      required: true
+
+  - type: textarea
+    id: code
+    attributes:
+      label: Codice che causa il crash
+      description: Inserisci un esempio minimo riproducibile.
+      render: javascript
+    validations:
+      required: true
+
+  - type: textarea
+    id: stacktrace
+    attributes:
+      label: Stack trace / errore
+      description: Incolla qui l'errore completo mostrato da Node.js.
+      render: text
+      placeholder: |
+        Error: ...
+            at ...
+            at ...
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Versione di LizardJS
+      placeholder: "es. 0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: node
+    attributes:
+      label: Versione di Node.js
+      placeholder: "es. Node.js 24.0.0"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: Sistema operativo
+      options:
+        - Windows
+        - Linux
+        - macOS
+        - Altro
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Informazioni aggiuntive
+      description: Aggiungi eventuali log, screenshot o altre informazioni utili.
+      placeholder: Qualsiasi altra informazione utile...
